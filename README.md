@@ -6,6 +6,7 @@ monitor.
 # Steps to setup SQLMons-SSMSDashboard
 
 [1.Create database](https://github.com/uknikhil/SQLMon-SSMSDashboard/blob/master/Create_Database.sql)
+
 [2.Create tables](https://github.com/uknikhil/SQLMon-SSMSDashboard/blob/master/Create_Tables.sql)
 
 [3.Create Credential and Proxy account]()
