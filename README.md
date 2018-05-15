@@ -4,6 +4,10 @@ It collect SQL Server instance status and store it in a table using powershell. 
 monitor.
 
 # Steps to setup SQLMons-SSMSDashboard
+
 1.Create database and table
+
 2. Create SQL Server agent job
+
 3. Create custom report
+
