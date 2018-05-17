@@ -9,7 +9,7 @@ monitor.
 
 [2.Create tables](https://github.com/uknikhil/SQLMon-SSMSDashboard/blob/master/Create_Tables.sql)
 
-[3.Create Credential and Proxy account]()
+[3.Create Credential and Proxy account](Create_Credential_And_Proxy.sql)
 
 [4. Create SQL Server agent job]()
 
