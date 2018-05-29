@@ -1,0 +1,13 @@
+$Servers=invoke-sqlcmd -ServerInstance User -Query "select ServerName from NixSql_Servers" -Database SQLMon-SSMSDashboard
+Foreach($Server in $Servers){
+[string]$srv=$Server.ServerName
+try{
+invoke-sqlcmd -ServerInstance $srv -Query "select @@servername"
+
+invoke-sqlcmd -ServerInstance User -Query "Insert into NixSql_ServerMon([ServerName],[Status]) Values(''$srv'',''Good'')" -Database MSDB
+
+}
+Catch{
+invoke-sqlcmd -ServerInstance User -Query "Insert into NixSql_ServerMon([ServerName],[Status]) Values(''$srv'',''Bad'')" -Database MSDB
+}
+}
